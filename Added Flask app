@@ -1,0 +1,10 @@
+app.runfrom flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Welcome to OptiCrop"
+
+if __name__ == "__main__":
+    app.run(debug=True)
